@@ -1,14 +1,13 @@
 import React from 'react'
-import Header from './Header';
-import Design from './Design';
-import Banner from './Banner';
+import Header from './components/Header';
+import Form from './components/Form';
 import "./App.css";
+
 const App = () => {
   return (
  <>
-<Header/>
-<Banner/>
-<Design/>
+<Header />
+<Form />
  </>
   )
 }
