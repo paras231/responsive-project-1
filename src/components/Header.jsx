@@ -9,6 +9,18 @@ const MainDiv = styled.div`
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-size: cover;
+  @media (min-width: 320px) and (max-width: 375px) {
+    display:none;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    display:none;
+  }
+  @media (min-width: 421px) and (max-width: 480px) {
+    display:none;
+  }
+  @media (min-width: 481px) and (max-width: 560px) {
+    display:none;
+  }
 `;
 
 const LinkContent = styled.div`
