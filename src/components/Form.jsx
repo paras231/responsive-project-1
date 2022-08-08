@@ -86,6 +86,15 @@ const Intervention = styled.h1`
     font-size: 34px;
     text-align: center;
   }
+  @media (min-width: 561px) and (max-width: 640px) {
+    font-size: 34px;
+    text-align: center;
+  }
+  @media (min-width: 641px) and (max-width: 768px) {
+    font-size: 34px;
+    text-align: center;
+  }
+  
 `;
 
 const TextDiv = styled.div`
