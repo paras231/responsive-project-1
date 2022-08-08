@@ -15,6 +15,7 @@ const MainDiv = styled.div`
   @media (min-width: 320px) and (max-width: 375px) {
     display: grid;
     height: 130vh;
+  
   }
   @media (min-width: 376px) and (max-width: 420px) {
     display: grid;
