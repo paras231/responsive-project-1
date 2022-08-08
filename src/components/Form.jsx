@@ -38,6 +38,7 @@ const MainDiv = styled.div`
     display: grid;
     height: 130vh;
   }
+  
 `;
 
 const StyledText = styled.h1`

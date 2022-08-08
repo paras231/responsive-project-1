@@ -7,7 +7,6 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme } from "@mui/material/styles";
 import Drawernav from "./Drawernav";
 
-
 const MainDiv = styled.div`
   width: 100%;
   position: fixed;
@@ -15,7 +14,6 @@ const MainDiv = styled.div`
   background-image: url(${bg});
   background-repeat: no-repeat;
   background-size: cover;
- 
 `;
 
 const LinkContent = styled.div`
@@ -34,6 +32,18 @@ const LinkContent = styled.div`
     color: #ffffff;
     cursor: pointer;
   }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    padding-left: 220px;
+  }
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    padding-left: 480px;
+  }
+  @media (min-width: 1440px) and (max-width: 1540px) {
+    padding-left: 660px;
+  }
+  @media (min-width: 1541px) and (max-width: 1680px) {
+    padding-left: 790px;
+  }
 `;
 const Logo = styled.img`
   padding-top: 14px;
@@ -47,9 +57,8 @@ const Header = () => {
     <>
       {isMobile ? (
         <MainDiv>
-           <Drawernav />
+          <Drawernav />
         </MainDiv>
-       
       ) : (
         <MainDiv>
           <Logo src={logo} />
