@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import bg from "../assets/bg.png";
 import group from "../assets/group.png";
+import vector from "../assets/vector.png";
 
 const MainDiv = styled.div`
   height: 70vh;
@@ -24,6 +25,15 @@ const MainDiv = styled.div`
     height: 130vh;
   }
   @media (min-width: 481px) and (max-width: 560px) {
+    display: grid;
+    height: 130vh;
+  }
+  @media (min-width: 561px) and (max-width: 640px) {
+    display: grid;
+
+    height: 130vh;
+  }
+  @media (min-width: 641px) and (max-width: 768px) {
     display: grid;
     height: 130vh;
   }
@@ -132,22 +142,22 @@ const FormDiv = styled.div`
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.12);
   border-radius: 12px;
   @media (min-width: 320px) and (max-width: 375px) {
-    height: 65vh;
+    height: 70vh;
     width: 75vw;
     margin-left: 12%;
   }
   @media (min-width: 376px) and (max-width: 420px) {
-    height: 65vh;
+    height: 70vh;
     width: 75vw;
     margin-left: 12%;
   }
   @media (min-width: 421px) and (max-width: 480px) {
-    height: 65vh;
+    height: 70vh;
     width: 75vw;
     margin-left: 12%;
   }
   @media (min-width: 481px) and (max-width: 560px) {
-    height: 65vh;
+    height: 70vh;
     width: 75vw;
     margin-left: 12%;
   }
@@ -189,12 +199,36 @@ const Select = styled.select`
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 2px;
   background: linear-gradient(180deg, #2a7d6c 0%, rgba(62, 105, 96, 0.62) 100%);
+  @media (min-width: 320px) and (max-width: 375px) {
+    width: 60vw;
+    margin-right: 0px;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    width: 60vw;
+    margin-right: 0px;
+  }
+  @media (min-width: 421px) and (max-width: 480px) {
+    width: 60vw;
+    margin-right: 0px;
+  }
+  @media (min-width: 481px) and (max-width: 560px) {
+    width: 60vw;
+    margin-right: 0px;
+  }
+  @media (min-width: 561px) and (max-width: 640px) {
+    width: 60vw;
+    margin-right: 0px;
+  }
+  @media (min-width: 641px) and (max-width: 768px) {
+    width: 60vw;
+    margin-right: 0px;
+  }
 `;
 
 const StyledInput = styled.input`
   background: linear-gradient(180deg, #2a7d6c 0%, rgba(62, 105, 96, 0.62) 100%);
   box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.12);
-
+  color: rgba(255, 255, 255, 0.7);
   height: 7vh;
   width: 15vw;
   ::placeholder,
@@ -223,6 +257,43 @@ const StyledInput = styled.input`
     width: 60vw;
   }
 `;
+
+const Button = styled.button`
+  background: #5BC8AF;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+border-radius: 4px;
+width:15vw;
+height:8vh;
+margin-top: 3%;
+outline: none;
+border:none;
+color: #FFFFFF;
+font-weight: 700;
+font-size: 18px;
+cursor: pointer;
+@media (min-width: 320px) and (max-width: 375px){
+  width:35vw;
+  height:6vh;
+}
+@media (min-width: 376px) and (max-width: 420px){
+  width:35vw;
+  height:6vh;
+}
+@media (min-width: 421px) and (max-width: 480px){
+  width:35vw;
+  height:6vh;
+}
+@media (min-width: 481px) and (max-width: 560px){
+  width:35vw;
+  height:6vh;
+}
+`
+const Icon = styled.img`
+ width:18px;
+ height:16px;
+  margin-right:10px;
+  margin-top:7px;
+`
 const Form = () => {
   return (
     <>
@@ -263,6 +334,12 @@ const Form = () => {
             <option value="opel">Opel</option>
             <option value="audi">Audi</option>
           </Select>
+        
+          <Button>
+          <Icon src={vector}/>
+            Submit
+          </Button>
+         
         </FormDiv>
       </MainDiv>
     </>
