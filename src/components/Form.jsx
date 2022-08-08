@@ -15,7 +15,6 @@ const MainDiv = styled.div`
   @media (min-width: 320px) and (max-width: 375px) {
     display: grid;
     height: 130vh;
-  
   }
   @media (min-width: 376px) and (max-width: 420px) {
     display: grid;
@@ -38,7 +37,6 @@ const MainDiv = styled.div`
     display: grid;
     height: 130vh;
   }
-  
 `;
 
 const StyledText = styled.h1`
@@ -95,7 +93,6 @@ const Intervention = styled.h1`
     font-size: 34px;
     text-align: center;
   }
-  
 `;
 
 const TextDiv = styled.div`
@@ -113,6 +110,18 @@ const TextDiv = styled.div`
   }
   @media (min-width: 481px) and (max-width: 560px) {
     padding-left: 0%;
+  }
+  @media (min-width: 561px) and (max-width: 640px) {
+    padding-left: 3%;
+  }
+  @media (min-width: 641px) and (max-width: 768px) {
+    padding-left: 3%;
+  }
+  @media (min-width: 769px) and (max-width: 992px) {
+    padding-left: 3%;
+  }
+  @media (min-width: 993px) and (max-width: 1024px) {
+    padding-left: 5%;
   }
 `;
 const ParaDiv = styled.div`
@@ -270,41 +279,41 @@ const StyledInput = styled.input`
 `;
 
 const Button = styled.button`
-  background: #5BC8AF;
-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
-border-radius: 4px;
-width:15vw;
-height:8vh;
-margin-top: 3%;
-outline: none;
-border:none;
-color: #FFFFFF;
-font-weight: 700;
-font-size: 18px;
-cursor: pointer;
-@media (min-width: 320px) and (max-width: 375px){
-  width:35vw;
-  height:6vh;
-}
-@media (min-width: 376px) and (max-width: 420px){
-  width:35vw;
-  height:6vh;
-}
-@media (min-width: 421px) and (max-width: 480px){
-  width:35vw;
-  height:6vh;
-}
-@media (min-width: 481px) and (max-width: 560px){
-  width:35vw;
-  height:6vh;
-}
-`
+  background: #5bc8af;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  width: 15vw;
+  height: 8vh;
+  margin-top: 3%;
+  outline: none;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  @media (min-width: 320px) and (max-width: 375px) {
+    width: 35vw;
+    height: 6vh;
+  }
+  @media (min-width: 376px) and (max-width: 420px) {
+    width: 35vw;
+    height: 6vh;
+  }
+  @media (min-width: 421px) and (max-width: 480px) {
+    width: 35vw;
+    height: 6vh;
+  }
+  @media (min-width: 481px) and (max-width: 560px) {
+    width: 35vw;
+    height: 6vh;
+  }
+`;
 const Icon = styled.img`
- width:18px;
- height:16px;
-  margin-right:10px;
-  margin-top:7px;
-`
+  width: 18px;
+  height: 16px;
+  margin-right: 10px;
+  margin-top: 7px;
+`;
 const Form = () => {
   return (
     <>
@@ -345,12 +354,11 @@ const Form = () => {
             <option value="opel">Opel</option>
             <option value="audi">Audi</option>
           </Select>
-        
+
           <Button>
-          <Icon src={vector}/>
+            <Icon src={vector} />
             Submit
           </Button>
-         
         </FormDiv>
       </MainDiv>
     </>
