@@ -11,6 +11,9 @@ const App = () => {
       <Header />
       <Form />
       <Imagecard />
+      <Imagecard />
+      <Imagecard />
+      <Imagecard />
 
     </>
   );
