@@ -5,9 +5,11 @@ import "./App.css";
 import Imagecard from "./components/Imagecard";
 import Page from "./components/Page";
 import Tabs from "./components/Tabs";
+import HamburderMenu from "./components/HamburderMenu";
 const App = () => {
   return (
     <>
+ 
       <Header />
       <Form />
       <Imagecard />
